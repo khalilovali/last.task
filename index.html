@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/metropolis"
+      type="text/css"
+    />
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -11,11 +16,12 @@
     <title>Document</title>
   </head>
   <body>
-    <!--Nav section start-->
+    <!--Header section start-->
     <header>
       <nav class="navbar">
         <div class="container heading">
-          <a class="navbar-brand" href="#">SB UI Kit PRO</a>
+          <h1><a class="navbar-brand" href="#">SB UI Kit PRO</a></h1>
+
           <div class="navigation">
             <ul>
               <li>
@@ -24,21 +30,114 @@
               <li><a class="nav-link" href="#">Landing</a></li>
               <li><a class="nav-link" href="#">Pages</a></li>
               <li><a class="nav-link" href="#">Documentation</a></li>
-              <button class="bttn">
-                Buy Now<svg
-                  class="arrow"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 25 25"
-                >
-                  <path
-                    style="fill: #ffffff"
-                    d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
-                    data-name="Right"
-                  />
-                </svg>
-              </button>
+            </ul>
+
+            <button class="bttn">
+              Buy Now<svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 25 25"
+              >
+                <path
+                  style="fill: #ffffff"
+                  d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                  data-name="Right"
+                />
+              </svg>
+            </button>
+
+            <svg
+              class="hamburger-menu"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-menu"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Header section end-->
+
+    <!--  Hero section start here-->
+    <div class="section-2">
+      <div class="part-1">
+        <button class="start-bttn">Start today!</button>
+        <h1>Get more leads, more customers, and more revenue</h1>
+        <p>
+          Stop losing leads because of a non-optimized landing page. Start
+          converting your users to paying customers and winning more sales today
+          with a new landing page!
+        </p>
+      </div>
+      <div class="part-2">
+        <!--Form Start here-->
+        <div class="card-forum">
+          <div class="card-forum-body">Sign up and get our free e-book</div>
+          <form action="/action_page.php">
+            <div class="form-group">
+              <div class="form-elements">
+                <label for="fname">First name:</label>
+                <br />
+                <input class="box1" type="text" id="fname" name="fname" />
+              </div>
+
+              <div class="form-elements">
+                <label class="lname" for="lname">Last name:</label>
+                <br />
+                <input class="box2" type="text" id="lname" name="lname" />
+              </div>
+            </div>
+
+            <div class="memory">
+              <label class="address" for="email">Email address</label><br />
+              <input class="email" type="email" id="email" name="email" /><br />
+              <div class="memory2">
+                <label class="address" for="email"
+                  >Company and Organization</label
+                ><br />
+                <input class="email" type="email" id="email" name="email" />
+                <button class="forum-bttn">Download Now</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--Form end here-->
+      </div>
+    </div>
+    <!--Hero section end here-->
+
+    <!--Cards section start here-->
+    <section id="cards-section">
+      <!--Heading for card section-->
+
+      <div class="container">
+        <div class="heading-cards">
+          <div class="badge badge-marketing">Marketing</div>
+          <h2>A better way to capture leads</h2>
+          <p class="lead">
+            Design can go a long way when capturing leads on your website. This
+            lead caputre landing page example can help you get started!
+          </p>
+        </div>
+
+        <div class="cards">
+          <!--First Card-->
+          <div class="card">
+            <div
+              class="icon-stack icon-stack-xl bg-secondary-soft text-secondary mb-4"
+            >
               <svg
-                class="hamburger-menu"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -48,198 +147,124 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="feather feather-menu"
+                class="feather feather-users"
               >
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
-            </ul>
+            </div>
+
+            <div class="card-body">
+              <h3>Cultivate better customers</h3>
+              <p>
+                Learn how lead generation fits into your inbound marketing
+                strategy and easy ways tha you can start generating leads for
+                your company
+              </p>
+            </div>
+          </div>
+
+          <!--Second Card-->
+          <div class="card">
+            <div
+              class="icon-stack icon-stack-xl bg-secondary-soft text-secondary2 mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-trending-up"
+              >
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Reach sales goals</h3>
+              <p>
+                Attract and convert prospects into paying customers on your
+                website by implementing a new design into your lead generation
+                strategy
+              </p>
+            </div>
+          </div>
+
+          <!--Third Card-->
+          <div class="card">
+            <div
+              class="icon-stack icon-stack-xl bg-secondary-soft text-secondary3 mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-tool"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                ></path>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Use the right tools</h3>
+              <p>
+                By adding forms, call to action buttons, and information boxes,
+                this template has the right tools to capture new leads
+              </p>
+            </div>
+          </div>
+
+          <!--Fourth Card-->
+          <div class="card">
+            <div
+              class="icon-stack icon-stack-xl bg-secondary-soft text-secondary4 mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-layout"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <div class="card-body">
+              <h3>Easy to customimze</h3>
+              <p>
+                Take sections and components from this UI Kit to build multiple
+                variations of a lead caputre page to test which one performs
+                better!
+              </p>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <section class="page-section">
-      <!--Purple section start here-->
-<div class="section-2">
-  <div class="part-1">
-    <button class="start-bttn">Start today!</button>
-    <h1>Get more leads, more customers, and more revenue</h1>
-    <p>
-      Stop losing leads because of a non-optimized landing page. Start
-      converting your users to paying customers and winning more sales today
-      with a new landing page!
-    </p>
-  </div>
-
-  <div class="part-2">
-    <!--Forum Start here-->
-    <div class="card-forum">
-      <div class="card-forum-body">Sign up and get our free e-book</div>
-      <form action="/action_page.php">
-        <label for="fname">First name:</label>
-        <label class="lname" for="lname">Last name:</label><br />
-        <input class="box1" type="text" id="fname" name="fname" />
-
-        <input
-          class="box2"
-          type="text"
-          id="lname"
-          name="lname"
-        /><br />
-        <div class="memory">
-          <label class="address" for="email">Email address</label><br />
-          <input class="email" type="email" id="email" name="email" /><br />
-          <div class="memory2">
-            <label class="address" for="email"
-              >Company and Organization</label
-            ><br />
-            <input class="email" type="email" id="email" name="email" />
-            <button class="forum-bttn">Download Now</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!--Forum end here-->
-  </div>
-</div>
-<!--Purple section end here-->
-
-    <!--Cards section start here-->
-    <div class="cards">
-      <!--Heading for card section-->
-
-      <div class="heading-cards">
-        <div class="badge badge-marketing">Marketing</div>
-        <h2>A better way to capture leads</h2>
-        <p class="lead">
-          Design can go a long way when capturing leads on your website. This
-          lead caputre landing page example can help you get started!
-        </p>
       </div>
-      <div class="card">
-        <!--First Card-->
-        <div
-          class="icon-stack icon-stack-xl bg-secondary-soft text-secondary mb-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-users"
-          >
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </svg>
-        </div>
-        <div class="card-body">
-          <h3>Cultivate better customers</h3>
-          <p>
-            Learn how lead generation fits into your inbound marketing strategy
-            and easy ways tha you can start generating leads for your company
-          </p>
-        </div>
-      </div>
-      <!--Second Card-->
-      <div class="card">
-        <div
-          class="icon-stack icon-stack-xl bg-secondary-soft text-secondary2 mb-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-trending-up"
-          >
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-            <polyline points="17 6 23 6 23 12"></polyline>
-          </svg>
-        </div>
-        <div class="card-body">
-          <h3>Reach sales goals</h3>
-          <p>
-            Attract and convert prospects into paying customers on your website
-            by implementing a new design into your lead generation strategy
-          </p>
-        </div>
-      </div>
-      <br />
-      <!--Third Card-->
-      <div class="card">
-        <div
-          class="icon-stack icon-stack-xl bg-secondary-soft text-secondary3 mb-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-tool"
-          >
-            <path
-              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-            ></path>
-          </svg>
-        </div>
-        <div class="card-body">
-          <h3>Use the right tools</h3>
-          <p>
-            By adding forms, call to action buttons, and information boxes, this
-            template has the right tools to capture new leads
-          </p>
-        </div>
-      </div>
-      <!--Fourth Card-->
-      <div class="card">
-        <div
-          class="icon-stack icon-stack-xl bg-secondary-soft text-secondary4 mb-4"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-layout"
-          >
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="3" y1="9" x2="21" y2="9"></line>
-            <line x1="9" y1="21" x2="9" y2="9"></line>
-          </svg>
-        </div>
-        <div class="card-body">
-          <h3>Easy to customimze</h3>
-          <p>
-            Take sections and components from this UI Kit to build multiple
-            variations of a lead caputre page to test which one performs better!
-          </p>
-        </div>
-      </div>
-    </div>
+      <div class="border"></div>
+    </section>
     <!--Cards section end here-->
+
     <!--Last section start here-->
     <section class="bg-white border-bottom py-10">
       <div class="container px-5">
@@ -255,6 +280,7 @@
         </div>
       </div>
     </section>
+
     <!--Footer-->
     <div id="layoutDefault_footer">
       <footer class="footer pt-10">
@@ -341,9 +367,9 @@
               </a>
             </div>
           </div>
+
           <div class="col-lg-9">
             <div class="row gx-5">
-              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
               <div class="text-uppercase-expanded text-xs mb-4">PRODUCT</div>
               <ul class="list-unstyled mb-0">
                 <li class="mb-2">
@@ -363,30 +389,29 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row gx-6">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+              <div class="text-uppercase-expanded text-xs mb-4">TECHNICAL</div>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a href="#!">Documentation</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Changelog </a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">Theme Customizer</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!">UI Kit</a>
+                </li>
+              </ul>
             </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="row gx-6">
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                <div class="text-uppercase-expanded text-xs mb-4">TECHNICAL</div>
-                <ul class="list-unstyled mb-0">
-                  <li class="mb-2">
-                    <a href="#!">Documentation</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!">Changelog
-                    </a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!">Theme Customizer</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!">UI Kit</a>
-                  </li>
-                </ul>
-                </div>
-              </div>  
-              </div>   
+          </div>
+        </div>
       </footer>
     </div>
   </body>

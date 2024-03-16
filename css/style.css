@@ -1,20 +1,26 @@
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf");
+}
+
 body {
-  font-family: "MetropolisRegular", sans-serif;
+  /* font-family: "MetropolisRegular", sans-serif; */
+  font-family: MetropolisRegular;
 }
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*Nav Section Start here*/
-.navbar {
-  padding-right: 2.5rem !important;
-  padding-left: 6.5rem !important;
-}
-.navbar > .container {
+
+.heading {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
-}
-.heading {
-  padding-right: 2.5rem !important;
-  padding-left: 2.5rem !important;
 }
 ul {
   display: flex;
@@ -54,8 +60,9 @@ ul {
 }
 .navigation {
   font-size: 1.3rem;
+  display: flex;
 }
-@media (min-width: 576px) {
+@media (max-width: 992px) {
   .bttn,
   .nav-link {
     display: none;
@@ -64,6 +71,13 @@ ul {
 
   .hamburger-menu {
     display: flex;
+  }
+
+  .section-2{
+    flex-wrap: wrap;
+  }
+  .cards .card{
+    width: 100%;
   }
 }
 @media (min-width: 760px) {
@@ -79,9 +93,7 @@ ul {
 
 /*Heading for card section*/
 .heading-cards {
-  padding: 5rem;
-  margin-left: 7rem;
-  margin-bottom: -4rem;
+  padding: 5rem 0;
 }
 .badge-marketing {
   display: inline-flex;
@@ -110,24 +122,30 @@ h2 {
 }
 /*Heading section end*/
 /*Cards section start here*/
+#cards-section {
+  background-color: #f2f6fc;
+}   
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f2f6fc;
   gap: 25px;
   width: 100% !important;
-  /*clip-path: polygon(0 30%, 100% 11%, 100% 85%, 0% 100%);*/
 }
 .card {
+  width: 48%;
   padding: 2.5rem;
-  margin-left: 20rem;
-  margin-right: -18rem;
   background-color: #ffffff;
   box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
-  height: 16rem;
-  width: 28rem;
   border-radius: 8px;
 }
+
+.border{
+    background-color: white;
+    height: 100px;
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
 p {
   color: #a7aeb8;
 }
@@ -240,11 +258,7 @@ h3 {
   padding-top: 6rem !important;
   margin-top: auto !important;
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
+
 .gx-5 {
   display: flex;
   justify-content: flex-start;
@@ -362,11 +376,8 @@ svg:not(:root).svg-inline--fa {
   width: 33rem;
   height: 4rem;
 }
-.lname {
-  margin-left: 14.2rem;
-}
+
 .box2 {
-  margin-left: 6.8rem;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #c5ccd6;
@@ -380,6 +391,19 @@ svg:not(:root).svg-inline--fa {
 form {
   padding: 18px;
   margin-top: 8px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+
+  input {
+    width: 100%;
+  }
+}
+
+.form-elements {
+  width: 50%;
 }
 
 .email {
